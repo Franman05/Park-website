@@ -1,59 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Park</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200;300&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm">
-    <a class="navbar-brand" href="#">
-     <img src="img/logo2.jpg" alt="Logo" style=" height: 50px; width:100px;">
-   </a>
- </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <img src="img/logo2.jpg" alt="Logo" style=" height: 50px; width:100px;" >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Location">Location</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <ul class="list-unstyled">
+  <ul id="Gallery" class="list-unstyled bg-warning">
     <li class="media">
-      <img class="mr-3" src="img/park.jpg" alt="Generic placeholder image">
+      <img class="mr-3" src="img/park.jpg" class="img-fluid" alt="Generic placeholder image">
       <div class="media-body">
         <h5 class="mt-0 mb-1"></h5>
         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
       </div>
     </li>
     <li class="media my-4">
-      <img class="mr-3" src="img/playground.jpg" alt="Generic placeholder image">
+      <img class="mr-3" src="img/playground.jpg" class="img-fluid" alt="Generic placeholder image">
       <div class="media-body">
         <h5 class="mt-0 mb-1"></h5>
         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
       </div>
     </li>
     <li class="media">
-      <img class="mr-3" src="img/walking.jpg" alt="Generic placeholder image">
+      <img class="mr-3" src="img/walking.jpg" class="img-fluid" alt="Generic placeholder image">
       <div class="media-body">
         <h5 class="mt-0 mb-1"></h5>
         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
       </div>
     </li>
     <li class="media">
-      <img class="mr-4" src="img/basketball.jpg" alt="Generic placeholder image">
+      <img class="mr-4" src="img/basketball.jpg" class="img-fluid" alt="Generic placeholder image">
       <div class="media-body">
         <h5 class="mt-0 mb-1"></h5>
         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
       </div>
     </li>
-  </ul>
   </div>
+  <div id="Location" class ="bottom-grind title-grid bg-primary">
   <div id="bottom-grid">
     <div class="map"><img class="map" src="img/images.jpg"></div>
     <div id="title-grid">
-    
       <div><h1>Location</h1></div>
       <div id="location-grid">
         <div><img id="marker" src="img/youarehere.jpg"></div>
